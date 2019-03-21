@@ -1,0 +1,2961 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>36/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 20 10:57:17 EDT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>1486 seconds (1486289 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case7, 455178, 03242019, RICHTER, BRENT, N/A, Other, 07151971, N/A, N/A, 20463 TAYLOR ST, N/A, ELKHORN, NE, 68022, 2016, Frame, Concrete Block, 1 Story / Ranch, 288600, N/A, 2016, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-94830685" onClick='toggleBox("Output-94830685", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-94830685" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-94830685">
+============================== Starting Case7 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: BRENT<br/>
+Entered Last Name: RICHTER<br/>
+Entered Location Address: 20463 TAYLOR ST<br/>
+Entered City: ELKHORN<br/>
+Entered Zip: 68022<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38836491<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 03242019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 07151971<br/>
+Entered Year Home Built: 2016<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 288600<br/>
+Entered Year Roof Installed: 2016<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38836491 (PS) has a total premium of $1,032.00<br/>
+Case7-Q38836491: $1,032.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case7 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case8, 455178, 03262019, FOX, BRIAN, N/A, Other, 06151970, N/A, N/A, 3622 NEWPORT AVE, N/A, OMAHA, NE, 68112, 1970, Frame, Concrete Block, 1 Story / Ranch, 105800, N/A, 2016, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-2143739483" onClick='toggleBox("Output-2143739483", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2143739483" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2143739483">
+============================== Starting Case8 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: BRIAN<br/>
+Entered Last Name: FOX<br/>
+Entered Location Address: 3622 NEWPORT AVE<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68112<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38836520<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 03262019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 06151970<br/>
+Entered Year Home Built: 1970<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 105800<br/>
+Entered Year Roof Installed: 2016<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38836520 (PS) has a total premium of $1,008.00<br/>
+Case8-Q38836520: $1,008.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case8 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case9, 455178, 03262019, REINSCH, STEPHEN, N/A, Other, 11151958, N/A, N/A, 17626 O ST, N/A, OMAHA, NE, 68135, 2004, Frame, Concrete Block, 1 Story / Ranch, 523700, N/A, 2016, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-702500163" onClick='toggleBox("Output-702500163", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-702500163" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-702500163">
+============================== Starting Case9 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: STEPHEN<br/>
+Entered Last Name: REINSCH<br/>
+Entered Location Address: 17626 O ST<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68135<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38836556<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 03262019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 11151958<br/>
+Entered Year Home Built: 2004<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 523700<br/>
+Entered Year Roof Installed: 2016<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38836556 (PS) has a total premium of $2,414.00<br/>
+Case9-Q38836556: $2,414.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case9 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case10, 455178, 03272019, SCHWEIGERT, JAMES, N/A, Other, 12011968, N/A, N/A, 15328 CUMING ST, N/A, OMAHA, NE, 68154, 1985, Frame, Concrete Block, 1 Story / Ranch, 178100, N/A, 2016, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1087072654" onClick='toggleBox("Output-1087072654", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1087072654" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1087072654">
+============================== Starting Case10 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: JAMES<br/>
+Entered Last Name: SCHWEIGERT<br/>
+Entered Location Address: 15328 CUMING ST<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68154<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38836600<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 03272019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 12011968<br/>
+Entered Year Home Built: 1985<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 178100<br/>
+Entered Year Roof Installed: 2016<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38836600 (PS) has a total premium of $927.00<br/>
+Case10-Q38836600: $927.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case10 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case11, 455178, 03272019, YODER, JEFF, N/A, Other, 08121972, N/A, N/A, 14820 PRAIRIER STAR ST, N/A, BENNINGTON, NE, 68007, 2015, Frame, Concrete Block, 1 Story / Ranch, 288800, N/A, 2015, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1617174216" onClick='toggleBox("Output-1617174216", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1617174216" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1617174216">
+============================== Starting Case11 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: JEFF<br/>
+Entered Last Name: YODER<br/>
+Entered Location Address: 14820 PRAIRIER STAR ST<br/>
+Entered City: BENNINGTON<br/>
+Entered Zip: 68007<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38836646<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 03272019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 08121972<br/>
+Entered Year Home Built: 2015<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 288800<br/>
+Entered Year Roof Installed: 2015<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38836646 (PS) has a total premium of $1,114.00<br/>
+Case11-Q38836646: $1,114.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case11 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case12, 455178, 03282019, FINK, JON, N/A, Other, 01151962, N/A, N/A, 22111 MARCY ST, N/A, ELKHORN, NE, 68022, 2003, Frame, Concrete Block, 1 Story / Ranch, 436200, N/A, 2012, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1979080261" onClick='toggleBox("Output-1979080261", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1979080261" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1979080261">
+============================== Starting Case12 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: JON<br/>
+Entered Last Name: FINK<br/>
+Entered Location Address: 22111 MARCY ST<br/>
+Entered City: ELKHORN<br/>
+Entered Zip: 68022<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38836681<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 03282019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 01151962<br/>
+Entered Year Home Built: 2003<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 436200<br/>
+Entered Year Roof Installed: 2012<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38836681 (PS) has a total premium of $1,636.00<br/>
+Case12-Q38836681: $1,636.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case12 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case13, 455178, 03282019, GRUHN, CHERRI, N/A, Other, 05061975, N/A, N/A, 1852 S 155 AVE, N/A, OMAHA, NE, 68144, 1979, Frame, Concrete Block, 1 Story / Ranch, 234000, N/A, 2014, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1860886124" onClick='toggleBox("Output-1860886124", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1860886124" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1860886124">
+============================== Starting Case13 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: CHERRI<br/>
+Entered Last Name: GRUHN<br/>
+Entered Location Address: 1852 S 155 AVE<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68144<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38836716<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 03282019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 05061975<br/>
+Entered Year Home Built: 1979<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 234000<br/>
+Entered Year Roof Installed: 2014<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38836716 (PS) has a total premium of $2,130.00<br/>
+Case13-Q38836716: $2,130.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case13 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case14, 455178, 03292019, SHIPPY, MARK, N/A, Other, 09251965, N/A, N/A, 9006 S CIR, N/A, OMAHA, NE, 68127, 1965, Frame, Concrete Block, 1 Story / Ranch, 167000, N/A, 2013, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1293462056" onClick='toggleBox("Output-1293462056", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1293462056" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1293462056">
+============================== Starting Case14 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: MARK<br/>
+Entered Last Name: SHIPPY<br/>
+Entered Location Address: 9006 S CIR<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68127<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38836760<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 03292019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 09251965<br/>
+Entered Year Home Built: 1965<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 167000<br/>
+Entered Year Roof Installed: 2013<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38836760 (PS) has a total premium of $821.00<br/>
+Case14-Q38836760: $821.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case14 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case15, 455178, 03302019, MALONE, LONNIE, N/A, Other, 06151980, N/A, N/A, 8420 S 106 ST, N/A, LAVISTA, NE, 68128, 2015, Frame, Concrete Block, 1 Story / Ranch, 284400, N/A, 2015, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1966670937" onClick='toggleBox("Output-1966670937", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1966670937" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1966670937">
+============================== Starting Case15 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: LONNIE<br/>
+Entered Last Name: MALONE<br/>
+Entered Location Address: 8420 S 106 ST<br/>
+Entered City: LAVISTA<br/>
+Entered Zip: 68128<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38836800<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 03302019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 06151980<br/>
+Entered Year Home Built: 2015<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 284400<br/>
+Entered Year Roof Installed: 2015<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38836800 (PS) has a total premium of $1,011.00<br/>
+Case15-Q38836800: $1,011.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case15 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case16, 455178, 03302019, WISEMAN, PERRY, N/A, Other, 12061962, N/A, N/A, 2404 N 186 ST, N/A, ELKHORN, NE, 68022, 2017, Frame, Concrete Block, 1 Story / Ranch, 448500, N/A, 2017, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-2002174925" onClick='toggleBox("Output-2002174925", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2002174925" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2002174925">
+============================== Starting Case16 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: PERRY<br/>
+Entered Last Name: WISEMAN<br/>
+Entered Location Address: 2404 N 186 ST<br/>
+Entered City: ELKHORN<br/>
+Entered Zip: 68022<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38836846<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 03302019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 12061962<br/>
+Entered Year Home Built: 2017<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 448500<br/>
+Entered Year Roof Installed: 2017<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38836846 (PS) has a total premium of $1,087.00<br/>
+Case16-Q38836846: $1,087.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case16 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case17, 455178, 04012019, OLARI, NICHOLAS, N/A, Other, 02151989, N/A, N/A, 15204 DAVENPORT CIR, N/A, OMAHA, NE, 68154, 1975, Frame, Concrete Block, 1 Story / Ranch, 149900, N/A, 2011, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-588449070" onClick='toggleBox("Output-588449070", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-588449070" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-588449070">
+============================== Starting Case17 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: NICHOLAS<br/>
+Entered Last Name: OLARI<br/>
+Entered Location Address: 15204 DAVENPORT CIR<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68154<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38836888<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04012019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 02151989<br/>
+Entered Year Home Built: 1975<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 149900<br/>
+Entered Year Roof Installed: 2011<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38836888 (PS) has a total premium of $828.00<br/>
+Case17-Q38836888: $828.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case17 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case18, 455178, 04012019, CONE, LORNA, N/A, Other, 06011945, N/A, N/A, 6118 S 159 ST, N/A, OMAHA, NE, 68135, 1996, Frame, Concrete Block, 1 Story / Ranch, 241600, N/A, 2001, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-735228558" onClick='toggleBox("Output-735228558", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-735228558" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-735228558">
+============================== Starting Case18 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: LORNA<br/>
+Entered Last Name: CONE<br/>
+Entered Location Address: 6118 S 159 ST<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68135<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38836920<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04012019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 06011945<br/>
+Entered Year Home Built: 1996<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 241600<br/>
+Entered Year Roof Installed: 2001<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Edits on Policy Rating Page 1. Can not proceed for quoteid Q38836920: Roofing Material: Not eligible for this program. (WS)"<br/>
+Clicked the "Save" button on the Policy Rating 1 page<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case19, 455178, 04012019, SOKOL, SHANNON, N/A, Other, 05021973, N/A, N/A, 3769 S 197 ST, N/A, OMAHA, NE, 68130, 2011, Frame, Concrete Block, 1 Story / Ranch, 295400, N/A, 2017, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-376725601" onClick='toggleBox("Output-376725601", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-376725601" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-376725601">
+============================== Starting Case19 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: SHANNON<br/>
+Entered Last Name: SOKOL<br/>
+Entered Location Address: 3769 S 197 ST<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68130<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38836938<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04012019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 05021973<br/>
+Entered Year Home Built: 2011<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 295400<br/>
+Entered Year Roof Installed: 2017<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38836938 (PS) has a total premium of $908.00<br/>
+Case19-Q38836938: $908.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case19 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case20, 455178, 04012019, HOYT, MICHAEL, N/A, Other, 01061972, N/A, N/A, 12724 DEER CREEK DR, N/A, OMAHA, NE, 68142, 2017, Frame, Concrete Block, 1 Story / Ranch, 400000, N/A, 2017, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1476235721" onClick='toggleBox("Output-1476235721", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1476235721" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1476235721">
+============================== Starting Case20 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: MICHAEL<br/>
+Entered Last Name: HOYT<br/>
+Entered Location Address: 12724 DEER CREEK DR<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68142<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38836985<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04012019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 01061972<br/>
+Entered Year Home Built: 2017<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 400000<br/>
+Entered Year Roof Installed: 2017<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38836985 (PS) has a total premium of $1,070.00<br/>
+Case20-Q38836985: $1,070.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case20 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case21, 455178, 04032019, GREVE, JIM, N/A, Other, 05231948, N/A, N/A, 2613 CORNELIA ST, N/A, OMAHA, NE, 68147, 1971, Frame, Concrete Block, 1 Story / Ranch, 151300, N/A, 2008, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1828508781" onClick='toggleBox("Output-1828508781", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1828508781" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1828508781">
+============================== Starting Case21 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: JIM<br/>
+Entered Last Name: GREVE<br/>
+Entered Location Address: 2613 CORNELIA ST<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68147<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38837034<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04032019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 05231948<br/>
+Entered Year Home Built: 1971<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 151300<br/>
+Entered Year Roof Installed: 2008<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38837034 (PS) has a total premium of $781.00<br/>
+Case21-Q38837034: $781.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case21 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case22, 455178, 04032019, KINNEY, MICHAEL, N/A, Other, 06031946, N/A, N/A, 555 RIVERFRONT PL, N/A, OMAHA, NE, 68102, 2005, Frame, Concrete Block, 1 Story / Ranch, 400000, N/A, 2005, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1732663543" onClick='toggleBox("Output-1732663543", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1732663543" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1732663543">
+============================== Starting Case22 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: MICHAEL<br/>
+Entered Last Name: KINNEY<br/>
+Entered Location Address: 555 RIVERFRONT PL<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68102<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+<a href='C:\eclipse-workspace\PS\src\main\java\Automation\PS\screenshots\screenshot_failures\Case22-TN_HO3_Error_20-03-2019-11-05-43.png'> <img src='C:\eclipse-workspace\PS\src\main\java\Automation\PS\screenshots\screenshot_failures\Case22-TN_HO3_Error_20-03-2019-11-05-43.png' height='100' width='100'/> </a><br/>
+Case22: Script has failed. Please rerun.<br/>
+============================== End Case22 ===================================<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case23, 455178, 04052019, VENNERSTROM, JONATHAN, N/A, Other, 01271956, N/A, N/A, 1106 N 36 ST, N/A, OMAHA, NE, 68131, 2004, Frame, Concrete Block, 1 Story / Ranch, 338800, N/A, 2013, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-733461760" onClick='toggleBox("Output-733461760", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-733461760" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-733461760">
+============================== Starting Case23 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: JONATHAN<br/>
+Entered Last Name: VENNERSTROM<br/>
+Entered Location Address: 1106 N 36 ST<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68131<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38837120<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04052019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 01271956<br/>
+Entered Year Home Built: 2004<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 338800<br/>
+Entered Year Roof Installed: 2013<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38837120 (PS) has a total premium of $1,221.00<br/>
+Case23-Q38837120: $1,221.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case23 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case24, 455178, 04062019, BEAUCHAMP, RONALD, N/A, Other, 05231961, N/A, N/A, 15711 GRANT CIR, N/A, OMAHA, NE, 68116, 1998, Frame, Concrete Block, 1 Story / Ranch, 489300, N/A, 2008, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1594039997" onClick='toggleBox("Output-1594039997", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1594039997" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1594039997">
+============================== Starting Case24 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: RONALD<br/>
+Entered Last Name: BEAUCHAMP<br/>
+Entered Location Address: 15711 GRANT CIR<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68116<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38837154<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04062019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 05231961<br/>
+Entered Year Home Built: 1998<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 489300<br/>
+Entered Year Roof Installed: 2008<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38837154 (PS) has a total premium of $1,988.00<br/>
+Case24-Q38837154: $1,988.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case24 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case25, 455178, 04072019, GATES, JOHN, N/A, Other, 04041945, N/A, N/A, 16962 POPPLETON AVE, N/A, OMAHA, NE, 68130, 1987, Frame, Concrete Block, 1 Story / Ranch, 168100, N/A, 2004, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1400973979" onClick='toggleBox("Output-1400973979", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1400973979" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1400973979">
+============================== Starting Case25 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: JOHN<br/>
+Entered Last Name: GATES<br/>
+Entered Location Address: 16962 POPPLETON AVE<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68130<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38837189<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04072019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 04041945<br/>
+Entered Year Home Built: 1987<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 168100<br/>
+Entered Year Roof Installed: 2004<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38837189 (PS) has a total premium of $726.00<br/>
+Case25-Q38837189: $726.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case25 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case26, 455178, 04082019, WEGEHAUPT, STEVEN, N/A, Other, 11261952, N/A, N/A, 436 S 159 ST, N/A, OMAHA, NE, 68118, 1991, Frame, Concrete Block, 1 Story / Ranch, 280600, N/A, 2013, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-347091104" onClick='toggleBox("Output-347091104", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-347091104" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-347091104">
+============================== Starting Case26 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: STEVEN<br/>
+Entered Last Name: WEGEHAUPT<br/>
+Entered Location Address: 436 S 159 ST<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68118<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38837228<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04082019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 11261952<br/>
+Entered Year Home Built: 1991<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 280600<br/>
+Entered Year Roof Installed: 2013<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38837228 (PS) has a total premium of $1,253.00<br/>
+Case26-Q38837228: $1,253.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case26 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case27, 455178, 04082019, WILLIAMS, STEVEN, N/A, Other, 03091959, N/A, N/A, 17029 M ST, N/A, OMAHA, NE, 68135, 1989, Frame, Concrete Block, 1 Story / Ranch, 264000, N/A, 2013, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1105416433" onClick='toggleBox("Output-1105416433", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1105416433" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1105416433">
+============================== Starting Case27 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: STEVEN<br/>
+Entered Last Name: WILLIAMS<br/>
+Entered Location Address: 17029 M ST<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68135<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38837279<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04082019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 03091959<br/>
+Entered Year Home Built: 1989<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 264000<br/>
+Entered Year Roof Installed: 2013<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38837279 (PS) has a total premium of $1,145.00<br/>
+Case27-Q38837279: $1,145.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case27 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case28, 455178, 04102019, HOTOVY, JERRY, N/A, Other, 01041960, N/A, N/A, 1503 DURHAM DR, N/A, PAPILLION, NE, 68133, 1998, Frame, Concrete Block, 1 Story / Ranch, 187300, N/A, 2017, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1110195322" onClick='toggleBox("Output-1110195322", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1110195322" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1110195322">
+============================== Starting Case28 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: JERRY<br/>
+Entered Last Name: HOTOVY<br/>
+Entered Location Address: 1503 DURHAM DR<br/>
+Entered City: PAPILLION<br/>
+Entered Zip: 68133<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38837322<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04102019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 01041960<br/>
+Entered Year Home Built: 1998<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 187300<br/>
+Entered Year Roof Installed: 2017<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38837322 (PS) has a total premium of $878.00<br/>
+Case28-Q38837322: $878.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case28 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case29, 455178, 04102019, WEYHRICH, STEVEN, N/A, Other, 02191956, N/A, N/A, 2308 S 184 CIR, N/A, OMAHA, NE, 68130, 1997, Frame, Concrete Block, 1 Story / Ranch, 385500, N/A, 2017, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-404947798" onClick='toggleBox("Output-404947798", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-404947798" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-404947798">
+============================== Starting Case29 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: STEVEN<br/>
+Entered Last Name: WEYHRICH<br/>
+Entered Location Address: 2308 S 184 CIR<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68130<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38837371<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04102019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 02191956<br/>
+Entered Year Home Built: 1997<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 385500<br/>
+Entered Year Roof Installed: 2017<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38837371 (PS) has a total premium of $1,511.00<br/>
+Case29-Q38837371: $1,511.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case29 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case30, 455178, 04132019, KOLL, GREGORY, N/A, Other, 07301968, N/A, N/A, 10632 S 191ST AVE, N/A, OMAHA, NE, 68136, 2016, Frame, Concrete Block, 1 Story / Ranch, 450100, N/A, 2016, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1976602906" onClick='toggleBox("Output-1976602906", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1976602906" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1976602906">
+============================== Starting Case30 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: GREGORY<br/>
+Entered Last Name: KOLL<br/>
+Entered Location Address: 10632 S 191ST AVE<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68136<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38837429<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04132019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 07301968<br/>
+Entered Year Home Built: 2016<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 450100<br/>
+Entered Year Roof Installed: 2016<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38837429 (PS) has a total premium of $1,149.00<br/>
+Case30-Q38837429: $1,149.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case30 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case31, 455178, 04132019, SMITH, LINDA, N/A, Other, 09191950, N/A, N/A, 663 C RD, N/A, PALMYRA, NE, 68418, 2001, Frame, Concrete Block, 1 Story / Ranch, 366800, N/A, 2009, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1978209605" onClick='toggleBox("Output-1978209605", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1978209605" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1978209605">
+============================== Starting Case31 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: LINDA<br/>
+Entered Last Name: SMITH<br/>
+Entered Location Address: 663 C RD<br/>
+Entered City: PALMYRA<br/>
+Entered Zip: 68418<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+<a href='C:\eclipse-workspace\PS\src\main\java\Automation\PS\screenshots\screenshot_failures\Case31-TN_HO3_Error_20-03-2019-11-10-39.png'> <img src='C:\eclipse-workspace\PS\src\main\java\Automation\PS\screenshots\screenshot_failures\Case31-TN_HO3_Error_20-03-2019-11-10-39.png' height='100' width='100'/> </a><br/>
+Case31: Script has failed. Please rerun.<br/>
+============================== End Case31 ===================================<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case32, 455178, 04142019, RAMSPOTT, EDWARD, N/A, Other, 08251946, N/A, N/A, 17510 CNTY RD P21, N/A, HERMAN, NE, 68029, 1999, Frame, Concrete Block, 1 Story / Ranch, 348400, N/A, 2012, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1394356510" onClick='toggleBox("Output-1394356510", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1394356510" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1394356510">
+============================== Starting Case32 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: EDWARD<br/>
+Entered Last Name: RAMSPOTT<br/>
+Entered Location Address: 17510 CNTY RD P21<br/>
+Entered City: HERMAN<br/>
+Entered Zip: 68029<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+<a href='C:\eclipse-workspace\PS\src\main\java\Automation\PS\screenshots\screenshot_failures\Case32-TN_HO3_Error_20-03-2019-11-11-15.png'> <img src='C:\eclipse-workspace\PS\src\main\java\Automation\PS\screenshots\screenshot_failures\Case32-TN_HO3_Error_20-03-2019-11-11-15.png' height='100' width='100'/> </a><br/>
+Case32: Script has failed. Please rerun.<br/>
+============================== End Case32 ===================================<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case33, 455178, 04202019, WINKELBAUER, MEGAN, N/A, Other, 04231978, N/A, N/A, 8208 S 154 AVE, N/A, OMAHA, NE, 68138, 2004, Frame, Concrete Block, 1 Story / Ranch, 207000, N/A, 2013, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-533415944" onClick='toggleBox("Output-533415944", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-533415944" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-533415944">
+============================== Starting Case33 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: MEGAN<br/>
+Entered Last Name: WINKELBAUER<br/>
+Entered Location Address: 8208 S 154 AVE<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68138<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38837555<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04202019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 04231978<br/>
+Entered Year Home Built: 2004<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 207000<br/>
+Entered Year Roof Installed: 2013<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38837555 (PS) has a total premium of $1,135.00<br/>
+Case33-Q38837555: $1,135.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case33 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case34, 455178, 04232019, ULRICH, PHILIP, N/A, Other, 04131955, N/A, N/A, 3009 N 168 AVE, N/A, OMAHA, NE, 68116, 2005, Frame, Concrete Block, 1 Story / Ranch, 244000, N/A, 2016, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1919834117" onClick='toggleBox("Output-1919834117", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1919834117" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1919834117">
+============================== Starting Case34 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: PHILIP<br/>
+Entered Last Name: ULRICH<br/>
+Entered Location Address: 3009 N 168 AVE<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68116<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38837593<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04232019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 04131955<br/>
+Entered Year Home Built: 2005<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 244000<br/>
+Entered Year Roof Installed: 2016<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38837593 (PS) has a total premium of $1,000.00<br/>
+Case34-Q38837593: $1,000.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case34 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case35, 455178, 04242019, CAMPBELL, JOHN, N/A, Other, 01211945, N/A, N/A, 1718 N 60 ST, N/A, OMAHA, NE, 68104, 1955, Frame, Concrete Block, 1 Story / Ranch, 134600, N/A, 2010, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1086849943" onClick='toggleBox("Output-1086849943", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1086849943" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1086849943">
+============================== Starting Case35 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: JOHN<br/>
+Entered Last Name: CAMPBELL<br/>
+Entered Location Address: 1718 N 60 ST<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68104<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38837646<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04242019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 01211945<br/>
+Entered Year Home Built: 1955<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 134600<br/>
+Entered Year Roof Installed: 2010<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38837646 (PS) has a total premium of $690.00<br/>
+Case35-Q38837646: $690.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case35 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>53</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case36, 455178, 04252019, JOHNS, JASON, N/A, Other, 02031982, N/A, N/A, 7004 N 140 AVE, N/A, OMAHA, NE, 68142, 2017, Frame, Concrete Block, 1 Story / Ranch, 227000, N/A, 2017, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1265053098" onClick='toggleBox("Output-1265053098", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1265053098" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1265053098">
+============================== Starting Case36 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: JASON<br/>
+Entered Last Name: JOHNS<br/>
+Entered Location Address: 7004 N 140 AVE<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68142<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38837749<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04252019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 02031982<br/>
+Entered Year Home Built: 2017<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 227000<br/>
+Entered Year Roof Installed: 2017<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38837749 (PS) has a total premium of $1,095.00<br/>
+Case36-Q38837749: $1,095.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case36 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>74</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case37, 455178, 04272019, MUILENBURG, MICHAEL, N/A, Other, 07201959, N/A, N/A, 1124 S 218 ST, N/A, ELKHORN, NE, 68022, 1994, Frame, Concrete Block, 1 Story / Ranch, 274000, N/A, 2008, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-246003654" onClick='toggleBox("Output-246003654", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-246003654" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-246003654">
+============================== Starting Case37 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: MICHAEL<br/>
+Entered Last Name: MUILENBURG<br/>
+Entered Location Address: 1124 S 218 ST<br/>
+Entered City: ELKHORN<br/>
+Entered Zip: 68022<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38837850<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04272019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 07201959<br/>
+Entered Year Home Built: 1994<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 274000<br/>
+Entered Year Roof Installed: 2008<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38837850 (PS) has a total premium of $1,177.00<br/>
+Case37-Q38837850: $1,177.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case37 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>73</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case38, 455178, 04282019, HESSION, DEBORAH, N/A, Other, 02011962, N/A, N/A, 4376 S 152 CIR, N/A, OMAHA, NE, 68137, 1986, Frame, Concrete Block, 1 Story / Ranch, 249500, N/A, 2010, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-235370598" onClick='toggleBox("Output-235370598", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-235370598" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-235370598">
+============================== Starting Case38 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: DEBORAH<br/>
+Entered Last Name: HESSION<br/>
+Entered Location Address: 4376 S 152 CIR<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68137<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38837974<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04282019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 02011962<br/>
+Entered Year Home Built: 1986<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 249500<br/>
+Entered Year Roof Installed: 2010<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38837974 (PS) has a total premium of $1,133.00<br/>
+Case38-Q38837974: $1,133.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case38 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>99</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case39, 455178, 04282019, SILKE, TIM, N/A, Other, 01291955, N/A, N/A, 16546 REDWOOD ST, N/A, OMAHA, NE, 68136, 2004, Frame, Concrete Block, 1 Story / Ranch, 278700, N/A, 2010, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-248710794" onClick='toggleBox("Output-248710794", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-248710794" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-248710794">
+============================== Starting Case39 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: TIM<br/>
+Entered Last Name: SILKE<br/>
+Entered Location Address: 16546 REDWOOD ST<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68136<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38838119<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 04282019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 01291955<br/>
+Entered Year Home Built: 2004<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 278700<br/>
+Entered Year Roof Installed: 2010<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38838119 (PS) has a total premium of $1,221.00<br/>
+Case39-Q38838119: $1,221.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case39 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>76</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case40, 455178, 05012019, HILLMAN, TRAVIS, N/A, Other, 02101979, N/A, N/A, 10814 S 110 AVE, N/A, PAPILLION, NE, 68046, 2009, Frame, Concrete Block, 1 Story / Ranch, 182700, N/A, 2009, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-2083217543" onClick='toggleBox("Output-2083217543", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2083217543" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2083217543">
+============================== Starting Case40 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: TRAVIS<br/>
+Entered Last Name: HILLMAN<br/>
+Entered Location Address: 10814 S 110 AVE<br/>
+Entered City: PAPILLION<br/>
+Entered Zip: 68046<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38838215<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 05012019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 02101979<br/>
+Entered Year Home Built: 2009<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 182700<br/>
+Entered Year Roof Installed: 2009<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38838215 (PS) has a total premium of $764.00<br/>
+Case40-Q38838215: $764.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case40 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>71</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case41, 455178, 05012019, OTTENS, JEFF, N/A, Other, 05271971, N/A, N/A, 5603 S 159 AVE, N/A, OMAHA, NE, 68135, 2001, Frame, Concrete Block, 1 Story / Ranch, 249000, N/A, 2013, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-1073741635" onClick='toggleBox("Output-1073741635", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1073741635" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1073741635">
+============================== Starting Case41 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: JEFF<br/>
+Entered Last Name: OTTENS<br/>
+Entered Location Address: 5603 S 159 AVE<br/>
+Entered City: OMAHA<br/>
+Entered Zip: 68135<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+PS PolicyID is Q38838309<br/>
+Entered Agent: 455178<br/>
+Entered Effective Date: 05012019<br/>
+Entered Occupation: Other<br/>
+Entered Date of Birth: 05271971<br/>
+Entered Year Home Built: 2001<br/>
+Entered Type of Construction: Frame<br/>
+Entered Exterior Walls: Concrete Block<br/>
+Entered # Stories: 1 Story / Ranch<br/>
+Entered Dwelling Coverage: 249000<br/>
+Entered Year Roof Installed: 2013<br/>
+Entered Roof Design: Gable<br/>
+Entered Roofing Material: Composite Shingle<br/>
+Entered Purchase Date: 01012019<br/>
+Entered Is this risk for a home closing?: No<br/>
+Clicked the "Mailing Address Same as Location" button<br/>
+Entered # Years at this Address: 2 or more years<br/>
+Entered Social Security Number: 111-00-1111<br/>
+Entered Has the insured given permission to run a credit report: Yes<br/>
+Clicked the "Next" button on the Policy Rating 1 page<br/>
+Entered Marital Status: Single<br/>
+Entered Number Of Children In Household: 0<br/>
+Entered Prior Liability Limit: $300,000<br/>
+Entered Report E-Claims: 0 Claims<br/>
+Entered Other Structures: 2% Cov A (Included)<br/>
+Entered Personal Property: 50% Cov A (Included)<br/>
+Entered Loss Of Use: 20% Cov A (Included)<br/>
+Entered Liability: $100,000<br/>
+Entered Medical Payments Limit: $1,000<br/>
+"Accredited Builder" check box NOT marked<br/>
+"E-Policy Paperless" check box NOT marked<br/>
+"E-Signature" check box NOT marked<br/>
+"New Purchase Discount" check box NOT marked<br/>
+"Secured Subdivision" check box NOT marked<br/>
+"Umbrella Discount" check box NOT marked<br/>
+"Wood Burning Stove" check box NOT marked<br/>
+Entered ACV Loss Settlement-Wind/Hail Losses to Roof: ACV - Composite Shingle<br/>
+Entered Burglar Protection: None<br/>
+Entered Do Any Residents Smoke: No<br/>
+Entered Fire Protection: Smoke Alarm<br/>
+Entered Months Owner Occupied: 9 months or more<br/>
+Entered Package Policy Discount: None<br/>
+Entered Paid In Full Discount: Mortgage Billed<br/>
+Entered All Other Perils Deductible: $1000<br/>
+Entered Wind Hail Deductible: $1000<br/>
+Entered Earthquake Coverage: No<br/>
+No packages have been selected<br/>
+"Limited Water Damage Coverage" check box NOT marked<br/>
+"Non Structural Hail Loss Limitation" check box NOT marked<br/>
+"Personal Injury Coverage" check box NOT marked<br/>
+"Personal Property Replacement Cost" check box NOT marked<br/>
+"Special Personal Property Coverage" check box NOT marked<br/>
+Entered Animal Liability: None<br/>
+Entered Increase Jewelry & Furs: None<br/>
+Entered Increased Replacement Cost On Dwelling: None<br/>
+Entered Loss Assessment: None<br/>
+Entered Ordinance or Law: 10% (Included)<br/>
+Entered Water Backup - Basement: None<br/>
+Entered Golf Cart Physical Damage & Liability: None<br/>
+Clicked the "Next" button on the Policy Rating 2 page<br/>
+Q38838309 (PS) has a total premium of $1,089.00<br/>
+Case41-Q38838309: $1,089.00<br/>
+Clicked the "Save" button on the Policy Premiums page<br/>
+============================== End Case41 ==============================<br/>
+</div>
+</td>
+<td></td>
+<td>71</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+<tr>
+<td title='Automation.PS.STATES.NE.NE_HO3Batch.RunNE_HO3()'><b>RunNE_HO3</b><br>Test class: Automation.PS.STATES.NE.NE_HO3Batch<br>Parameters: Case42, 455178, 05042019, WHEELER, SHARI, N/A, Other, 08211967, N/A, N/A, 7289 TIMBER CREED RD, N/A, FORT CALHOUN, NE, 68023, 1995, Frame, Concrete Block, 1 Story / Ranch, 584900, N/A, 2015, Gable, Composite Shingle, 01012019, N/A, No, 111-00-1111, Yes, Single, 0, 300000, 0 Claims, 2% Cov A (Included), 50% Cov A (Included), 20% Cov A (Included), 100000, 1000, No, No, No, No, No, No, No, None, ACV, None, No, Smoke Alarm, 9 months or more, Mortgage Billed, 1000, 1000, No, N/A, N/A, N/A, None, No, No, No, No, No, No, No, No, No, No, No, 10% (Included), None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None<br/>
+<a href="#Output-177104018" onClick='toggleBox("Output-177104018", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-177104018" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-177104018">
+============================== Starting Case42 ==============================<br/>
+Navigating to https://policy.americanstrategic.com/Policy/Lookup.aspx<br/>
+Entered State: Nebraska<br/>
+Clicked the "Create New Quote" button on the Rating & Policy Lookup page<br/>
+Entered First Name: SHARI<br/>
+Entered Last Name: WHEELER<br/>
+Entered Location Address: 7289 TIMBER CREED RD<br/>
+Entered City: FORT CALHOUN<br/>
+Entered Zip: 68023<br/>
+Entered Plan Type: [NE] HO3 - American Strategic Insurance Corp<br/>
+Entered Residence Type: Single Family<br/>
+Checked the ineligibility knockouts check boxes on the Plan and Residence Type page<br/>
+Clicked the "Next" button on the Plan and Residence Type page<br/>
+<a href='C:\eclipse-workspace\PS\src\main\java\Automation\PS\screenshots\screenshot_failures\Case42-TN_HO3_Error_20-03-2019-11-22-01.png'> <img src='C:\eclipse-workspace\PS\src\main\java\Automation\PS\screenshots\screenshot_failures\Case42-TN_HO3_Error_20-03-2019-11-22-01.png' height='100' width='100'/> </a><br/>
+Case42: Script has failed. Please rerun.<br/>
+============================== End Case42 ===================================<br/>
+</div>
+</td>
+<td></td>
+<td>58</td>
+<td>Automation.PS.STATES.NE.NE_HO3Batch@1786f9d5</td></tr>
+</table><p>
+</body>
+</html>
